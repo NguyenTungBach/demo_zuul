@@ -1,0 +1,8 @@
+server:
+  port: 8330
+
+zuul:
+  routes:
+    product:
+      path: /product/**
+      url: http://localhost:8331/product
